@@ -15,7 +15,7 @@
 -- of the license.                                                          --
 ------------------------------------------------------------------------------
 
-project Spawn is
+library project Spawn is
 
    type OS_API_Kind is ("unix", "osx", "Windows_NT");
    OS_API : OS_API_Kind := external ("OS", "unix");
@@ -26,6 +26,14 @@ project Spawn is
 
    type Any_Boolean is ("false", "true");
    Warnings_As_Errors : Any_Boolean := external ("SPAWN_WARN_ERRORS", "true");
+
+   Version := "0.1";
+
+   for Library_Kind use "dynamic";
+   for Library_Name use "spawn";
+   for Library_Dir use "../.libs";
+   for Library_ALI_Dir use "../.libs";
+   for Library_Version use "libspawn.so." & Version;
 
    for Source_Dirs use ("../source/spawn");
    for Object_Dir use "../.obj/spawn";

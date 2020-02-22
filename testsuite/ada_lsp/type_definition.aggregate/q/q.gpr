@@ -1,3 +1,0 @@
-project q is
-   for Source_Dirs use (".", "../common");
-end q;

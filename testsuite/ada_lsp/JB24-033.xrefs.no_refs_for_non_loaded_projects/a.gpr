@@ -1,5 +1,0 @@
-with "c.gpr";
-project A is
-   for Source_Dirs use ("a");
-   for Object_Dir use "obj";
-end A;

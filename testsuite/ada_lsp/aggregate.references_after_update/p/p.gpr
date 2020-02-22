@@ -1,3 +1,0 @@
-with "../common/common";
-project p is
-end p;

@@ -1,8 +1,7 @@
 Ada Process API _(spawn)_
 =========================================
 
-[![CircleCI](https://circleci.com/gh/reznikmm/spawn.svg?style=svg)](https://circleci.com/gh/reznikmm/spawn)
-[![reuse compliant](https://img.shields.io/badge/reuse-compliant-green.svg)](https://reuse.software/)
+[![Build](https://github.com/reznikmm/spawn/workflows/Build/badge.svg)](https://github.com/reznikmm/spawn/actions)
 
 This library provides simple API to spawn processes and communicate with them.
 

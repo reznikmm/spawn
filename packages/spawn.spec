@@ -36,7 +36,7 @@ Devel package for spawn
 %setup -q -n %{name}
 
 %build
-make  %{?_smp_mflags} GPRBUILD_FLAGS="%Gnatmake_optflags"
+make  %{?_smp_mflags} GPRBUILD_FLAGS="-p -j0 -R" #GPRBUILD_FLAGS="%Gnatmake_optflags"
 
 %install
 rm -rf %{buildroot}

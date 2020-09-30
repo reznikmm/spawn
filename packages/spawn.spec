@@ -7,7 +7,7 @@ Version:    0.1.0
 Release:    git%{?dist}
 Summary:    Ada Process API
 Group:      Development/Libraries
-License:    MIT
+License:    GPLv3+ with exceptions
 URL:        https://github.com/reznikmm/spawn
 ### Direct download is not availeble
 Source0:    spawn.tar.gz
@@ -24,7 +24,7 @@ This library provides simple API to spawn processes and communicate with them.
 %package devel
 
 Group:      Development/Libraries
-License:    MIT
+License:    GPLv3+ with exceptions
 Summary:    Devel package for Ada Pretty
 Requires:   %{name}%{?_isa} = %{version}-%{release}
 Requires:   fedora-gnat-project-common  >= 2
@@ -46,7 +46,7 @@ make install DESTDIR=%{buildroot} LIBDIR=%{_libdir} PREFIX=%{_prefix} GPRDIR=%{_
 make  %{?_smp_mflags} GPRBUILD_FLAGS="%Gnatmake_optflags" check
 
 %files
-%doc LICENSE
+%doc LICENSES/*
 %dir %{_libdir}/%{name}
 %{_libdir}/%{name}/libspawn.so.%{rtl_version}
 %{_libdir}/libspawn.so.%{rtl_version}

@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: spawn
+Upstream-Contact: Max Reznik <reznikmm@gmail.com>
+Source: https://github.com/reznikmm/spawn
+
+Files: README.md Makefile packages/* .github/* .gitignore
+Copyright: 2020 Max Reznik <reznikmm@gmail.com>
+License: GPL-3.0-or-later WITH GCC-exception-3.1
+
+Files: gnat/* source/* testsuite/*
+Copyright: 2020 AdaCore
+License: GPL-3.0-or-later WITH GCC-exception-3.1
+

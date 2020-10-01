@@ -12,10 +12,13 @@ jobs:
         uses: fsfe/reuse-action@v1.1
         with:
           args: --root spawn lint
-      - uses: reznikmm/fedora-ada-action@v2
+      - name: Build RPM
+        uses: reznikmm/fedora-ada-action@v2
         with:
           spec: spawn/packages/spawn.spec
-      - uses: reznikmm/upload-bintray-docker-action@v2
+      - name: Upload to bintray
+        uses: reznikmm/upload-bintray-docker-action@v2
+        if: ${{ github.ref == 'master' }}
         with:
           username: reznikmm
           repository: matreshka
